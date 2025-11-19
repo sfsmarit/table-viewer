@@ -1,0 +1,8 @@
+[server]
+# headless = true
+# port = 8520
+# enableCORS = false
+# enableXsrfProtection = true
+
+[theme]
+base="dark"
