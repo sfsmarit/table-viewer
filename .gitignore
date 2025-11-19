@@ -1,1 +1,4 @@
 __pycache__
+*.py
+!main.py
+!config.py
