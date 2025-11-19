@@ -1,6 +1,5 @@
 [server]
-# headless = true
-# port = 8520
+port = 9001
 # enableCORS = false
 # enableXsrfProtection = true
 

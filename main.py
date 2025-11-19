@@ -1,7 +1,7 @@
 import streamlit as st
 
-import data
-
+# import data
+import saw_tapeout as data
 
 if __name__ == "__main__":
 
