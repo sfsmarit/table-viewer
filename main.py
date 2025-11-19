@@ -1,11 +1,11 @@
 import streamlit as st
 from st_aggrid import AgGrid, GridOptionsBuilder
-import config
+import data
 
 
 if __name__ == "__main__":
 
-    page_title = config.PAGE_TITLE
+    page_title = data.PAGE_TITLE
     st.set_page_config(page_title=page_title, layout="wide")
     st.title(page_title)
 
@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     placeholder = st.empty()
 
-    df = config.create_data()
+    df = data.create_data()
 
     # Grid options
     gb = GridOptionsBuilder.from_dataframe(df)
@@ -36,6 +36,6 @@ if __name__ == "__main__":
     placeholder.download_button(
         ":material/download: csv",
         data=csv,
-        file_name=config.OUTPUT_CSV,
+        file_name=data.OUTPUT_CSV,
         mime="text/csv"
     )
