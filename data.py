@@ -9,7 +9,8 @@ CACHE_TIME = 1  # [s]
 
 @st.cache_data(ttl=CACHE_TIME)
 def create_data() -> pd.DataFrame:
-    return pd.DataFrame({
+    df = pd.DataFrame({
         "Name": ["Tanaka", "Yamada"],
         "Age": [30, 40],
     })
+    return df
