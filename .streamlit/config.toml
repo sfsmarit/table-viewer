@@ -1,5 +1,5 @@
 [server]
-port = 9001
+port = 8602
 # enableCORS = false
 # enableXsrfProtection = true
 

@@ -1,3 +1,4 @@
+info.yaml
 __pycache__
 *.py
 !main.py
