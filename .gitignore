@@ -1,5 +1,5 @@
 info.yaml
 __pycache__
 *.py
-!main.py
+!table_viewer.py
 !data.py
