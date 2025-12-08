@@ -1,5 +1,4 @@
-info.yaml
 __pycache__
-*.py
-!table_viewer.py
-!data.py
+info.yaml
+config.yaml
+saw_tapeout.py
