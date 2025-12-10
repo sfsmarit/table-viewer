@@ -1,6 +1,7 @@
 import streamlit as st
-import data
 from utils import login_form
+
+import data
 
 
 page_title = data.PAGE_TITLE
