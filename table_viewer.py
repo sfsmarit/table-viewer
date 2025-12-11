@@ -14,14 +14,24 @@ if not data.REQUIRE_AUTH or login_form.login():
 
     download_button_placeholder = st.empty()
 
-    # Table
     df = data.create_data()
-    edited_df = st.data_editor(df, width="stretch")
 
-    csv = edited_df.to_csv(index=False)
+    # Table
+    # Make "url" column to clickable icon
+    column_config = {
+        col: st.column_config.LinkColumn(label=col, display_text=":material/open_in_new:")
+        for col in data.linked_columns()
+    }
+    st.data_editor(
+        df,
+        width="stretch",
+        column_config=column_config,
+    )
+
+    # Download button
     download_button_placeholder.download_button(
         ":material/download: csv",
-        data=csv,
+        data=df.to_csv(index=False),
         file_name=data.OUTPUT_CSV,
         mime="text/csv",
     )

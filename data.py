@@ -13,5 +13,10 @@ def create_data() -> pd.DataFrame:
     df = pd.DataFrame({
         "Name": ["Tanaka", "Yamada"],
         "Age": [30, 40],
+        "website": ["https://ja.wikipedia.org/", "https://www.youtube.com/"],
     })
     return df
+
+
+def linked_columns() -> list[str]:
+    return ["website"]
