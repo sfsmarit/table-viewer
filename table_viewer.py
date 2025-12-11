@@ -5,7 +5,7 @@ import data
 
 
 page_title = data.PAGE_TITLE
-st.set_page_config(page_title=page_title, layout="wide")
+st.set_page_config(page_title=page_title, page_icon=":rainbow_flag:", layout="wide")
 st.title(page_title)
 
 
