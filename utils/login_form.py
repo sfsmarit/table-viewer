@@ -55,15 +55,11 @@ def login() -> bool:
     --------
     >>> # In a Streamlit app file:
     >>> import streamlit as st
-    >>> from your_module import login
+    >>> from login_form import login
     >>>
-    >>> st.title("Secure App")
-    >>> if login():
-    ...     st.success("Logged in!")
-    ...     # Show the rest of the app
-    ...     st.write("Welcome to the dashboard.")
-    >>> else:
-    ...     st.info("Please log in to continue.")
+    >>> if not login():
+    ...     st.stop()
+    >>> st.write("Welcome to the dashboard.")
     """
 
     config_yaml = 'config.yaml'
