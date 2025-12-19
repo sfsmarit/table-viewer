@@ -9,7 +9,7 @@ st.set_page_config(page_title=page_title, page_icon=":rainbow_flag:", layout="wi
 st.title(page_title)
 
 # Login
-if False:  # data.REQUIRE_AUTH and not login_form.login():
+if data.REQUIRE_AUTH and not login_form.login():
     st.stop()
 
 st.markdown("---")
