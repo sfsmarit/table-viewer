@@ -3,3 +3,4 @@ info.yaml
 config.yaml
 saw_tapeout.py
 test*
+tmp/
