@@ -4,6 +4,7 @@ import pandas as pd
 
 PAGE_TITLE = "Table Viewer"
 OUTPUT_CSV = "data.csv"
+API_PATH = "/download/dummy/csv"
 REQUIRE_AUTH = False
 CACHE_TIME = 1  # [s]
 

@@ -7,7 +7,7 @@ import data
 api = FastAPI(title="Tape-Out List CSV Download API")
 
 
-@api.get("/download/tapeout/csv")
+@api.get(data.API_PATH)
 def download_csv():
     # Build your data
     df = data.create_data()
