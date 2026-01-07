@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import Response
 import io
 
-import saw_tapeout as data
+import data
 
 api = FastAPI(title="Tape-Out List CSV Download API")
 
